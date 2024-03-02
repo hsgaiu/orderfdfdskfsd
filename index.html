@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Черный фон с окном</title>
+<link rel="stylesheet" href="./website/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="content" id="content1">
+    <h2>До начала розыгрыша</h2>
+    <div id="timer"></div>
+  </div>
+  <div class="content" id="content2" style="display: none;">
+    <h2>Розыгрыш начался!</h2>
+    <div id="roulette">
+      <img id="userAvatar" src="">
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+<script src="./website/website.js"></script>
+
+</body>
+</html>

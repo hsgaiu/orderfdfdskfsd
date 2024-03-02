@@ -1,0 +1,60 @@
+:root {
+    --text-color: white; /* Устанавливаем переменную для цвета текста */
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 85, 85);
+  }
+  
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    width: 100%; /* Можете изменить на нужную ширину */
+    max-width: 99999px; /* Опционально: ограничиваем максимальную ширину */
+    padding: 70px;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44); /* Прозрачный белый фон */
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  h2, p, #timer {
+    color: var(--text-color); /* Используем переменную для цвета текста */
+  }
+
+  #timer {
+    margin-top: 20px; /* Добавляем немного отступа между текстом и таймером */
+  }
+  
+  #roulette {
+    display: inline-flex;
+    justify-content: center; /* Располагаем элементы по горизонтали по центру */
+    align-items: center; /* Располагаем элементы по вертикали по центру */
+    overflow-x: auto; /* Разрешаем прокрутку по горизонтали */
+    width: auto; /* Ширина рулетки зависит от размеров картинок */
+    height: 200px; /* Высота рулетки */
+    border: 2px solid #02ccff; /* Голубая рамка вокруг рулетки */
+    border-radius: 10px; /* Скругление углов рамки */
+    overflow: hidden;
+  }
+  
+  #roulette img {
+    max-width: none; /* Отменяем максимальную ширину для картинок */
+    max-height: 100%; /* Высота картинок равна высоте рулетки */
+    margin: 0 -1px; /* Добавляем небольшой отступ между картинками */
+    border: 2px solid #8700bd; /* Голубая обводка для каждой картинки */
+    border-radius: 2px; /* Скругление углов картинок */
+  }
